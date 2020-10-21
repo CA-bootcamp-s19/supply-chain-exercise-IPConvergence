@@ -1,4 +1,4 @@
-pragma solidity  >=0.4.21 <0.7.0;
+pragma solidity  >=0.4.21 <=0.6.22;
 
 import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
@@ -29,7 +29,7 @@ contract TestSupplyChain {
         Assert.isFalse(r, "If this is true, something is broken!");
     }
       // test2 for purchasing an item that is not for Sale
-     function () external payable {} 
+     function () external receive payable {} 
 
      function test2BuyItem() public returns (bool) {
         bool r;
