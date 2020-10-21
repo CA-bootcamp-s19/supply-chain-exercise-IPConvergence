@@ -29,7 +29,7 @@ contract TestSupplyChain {
         Assert.isFalse(r, "If this is true, something is broken!");
     }
       // test2 for purchasing an item that is not for Sale
-     function () external receive payable {} 
+     function () external payable {} 
 
      function test2BuyItem() public returns (bool) {
         bool r;
